@@ -7,28 +7,61 @@
 <body>
     <h1 class = "emphasize">Daniel James Evans
     <nav>
-        <a href="/", class = "navtext">Home</a> |
-        <a href="Publications.html", class = "navtext">Publications</a> |
+        <a href="/", class = "navtext">Home</a>
+        <a href="Publications.html", class = "navtext">Publications</a>
         <a href="Outreach.html", class = "navtext">Teaching & Outreach</a>
     </nav>
 </h1>
 
-<div style="padding:10px;">
+<div style="padding:10px; max-width:1000px; margin: auto;">
 
-<div style="display:flex; align-items:center;"> <!-- align-items does vertical centering within flexbox. -->
-    
-    <img src="static/dje.JPG" alt="Photo of me" style="width:200px; height:200px; border-radius:50%; padding:10px 10px 10px;" />
-    <div>
-        <p>
-            I'm a PhD candidate in biophysics at Johns Hopkins.  I expect to graduate in spring 2024.
-        </p>
-        <p>
-            My research focuses on developing and applying computational tools to study protein allostery.
-        </p>
-    </div>
+
+<div style="display:flex; align-items: center;">
+        <img src="static/dje.JPG" alt="Photo of me" style="width:300px; height:300px; padding:10px 10px 10px;" />
+        <ul style="padding:10px 10px 10px; font-size: 1.5em; list-style-type: none;">
+            <li style="line-height: 2em;">Biophysics PhD candidate at Johns Hopkins.</li>
+            <li style="line-height: 2em;">Advisor: Dr. Albert Lau</li>
+            <li style="line-height: 2em;">Expected graduation: Summer 2024</li>
+        </ul>
+
 </div>
-
-<p style="padding-top: 25px;"><small>&copy 2023 Daniel James Evans.  All rights reserved.</small></p>
+    <p style="max-width:1000px;">
+        My PhD research has centered around a key question: <b>Given a protein structure, how can we computationally
+        find ways of inhibiting the protein?</b>  Answering this question requires software development, protein
+        simulation, and data analysis.  Here are a few topics I've studied:
+    </p>
+    
+    <div style="display:flex; align-items:center;">
+        
+        <img src="static/tactics.png" alt="Screenshot of TACTICS output" style="width:200px; height:200px; border-radius:50%; padding:10px 10px 10px;" />
+        <div>
+            <p>
+                <b>Binding site identification:</b>  I developed the TACTICS software to find binding sites within molecular dynamics simulations.  TACTICS outperforms popular alternatives in speed and accuracy.
+            </p>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:center;">
+        
+        <img src="static/gag.png" alt="Screenshot of TACTICS output" style="width:200px; height:200px; border-radius:50%; padding:10px 10px 10px;" />
+        <div>
+            <p>
+                <b>HIV gag self-assembly:</b> I used a reaction-diffusion model to assess conditions required for HIV gag lattice assembly.  The results suggest that HIV reproduction would be inhibited when Gag self-assembly conditions are shifted outside of a narrow range.
+            </p>
+        </div>
+    </div>
+    
+    <div style="display:flex; align-items:center;">
+        
+        <img src="static/coming_soon.png" alt="Screenshot of TACTICS output" style="width:200px; height:200px; border-radius:50%; padding:10px 10px 10px;" />
+        <div>
+            <p>
+                <b>Allosteric signal transmission:</b> this is an ongoing project.  Please check back soon for exciting results!
+            </p>
+        </div>
+    </div>
+    
+<p style="padding-top: 25px;"><small>&copy 2024 Daniel James Evans.  All rights reserved.</small></p>
 </div>
 
 </body>
