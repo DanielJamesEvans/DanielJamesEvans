@@ -1,37 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    background-color:rgb(228, 222, 208);
+    background-color:rgb(255, 255, 255);
     font-family:"Verdana", "Times New Roman";
     line-height: 150%;
  }
- 
+
+ :root {
+    --nav_bg: rgb(136, 158, 146);
+  }
+
  .emphasize {
-             background-color:rgb(139, 110, 11);
+             background-color: var(--nav_bg);
  }
  
+ nav {
+    background: var(--nav_bg);
+    display: inline;
+    font-size: 0.75em;
+    /*float:right;
+    padding-top: 1%;*/
+}
+
  .navtext {
-    background-color:rgb(139, 110, 11);
+    background-color: var(--nav_bg);
     color:rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+    margin-left: 20px;
 }
 
 .navtext:hover {
     color:rgb(59, 8, 8);
-}
-
- .warning {
-           color:rgb(255,0,0);
- }
-
- .inline {
-    display: inline;
- }
-
- code {
-    font-family: monospace;
-    background-color:rgb(196, 187, 169);
 }
 
 h1 {
@@ -39,12 +39,8 @@ h1 {
     position: sticky; top: 0;
 }
 
- nav {
-    background: rgb(139, 110, 11);
-    display: inline;
-    font-size: 0.5em;
-    /*float:right;
-    padding-top: 1%;*/
+p {
+    max-width: 700px;
 }
 
 
